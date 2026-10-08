@@ -15,6 +15,7 @@ export class ConfirmationService {
                 { 
                     text: 'Annuler', 
                     role: 'false',
+                    cssClass: "alert-cancel",
                     handler: async () => {
                         await alert.dismiss()
                     },
@@ -22,6 +23,7 @@ export class ConfirmationService {
                 {
                     text: 'Confirmer',
                     role: 'true',
+                    cssClass: "alert-confirm",
                     handler: () => {
                         callback();
                     }
